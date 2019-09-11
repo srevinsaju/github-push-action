@@ -6,4 +6,4 @@ echo "Push to branch ${INPUT_BRANCH}";
 };
 
 header=$(echo -n "ad-m:${INPUT_GITHUB_TOKEN}" | base64)
-git -c http.extraheader="AUTHORIZATION: basic $header" push origin nightly;
+git -c http.extraheader="AUTHORIZATION: basic $header" push origin master;
